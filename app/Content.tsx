@@ -13,7 +13,7 @@ import {
 
 export default function Content() {
   return (
-    <div className="container mx-auto md:py-5 lg:py-10">
+    <div className="px-2 md:container mx-auto py-2 md:py-5 lg:py-10">
       <Card>
         <CardHeader>
           <CardTitle>Students And Their Ranks</CardTitle>
