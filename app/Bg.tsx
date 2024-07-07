@@ -31,7 +31,9 @@ export default function Bg({
           ? "bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-yellow-200 via-red-500 to-fuchsia-500"
           : randomNumber === 10
           ? "bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900"
-          : "bg-[conic-gradient(at_bottom,_var(--tw-gradient-stops))] from-white via-sky-500 to-sky-500"
+          : randomNumber === 11
+          ? "bg-[conic-gradient(at_bottom,_var(--tw-gradient-stops))] from-white via-sky-500 to-sky-500"
+          : ""
       }`}
     >
       {children}

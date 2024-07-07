@@ -13,16 +13,16 @@ import {
 
 export default function Content() {
   return (
-    <div className="px-2 md:container mx-auto py-2 md:py-5 lg:py-10">
+    <div className="px-1 w-full md:container mx-auto py-2 md:py-5 lg:py-10">
       <Card>
         <CardHeader>
-          <CardTitle>Students And Their Ranks</CardTitle>
+          <CardTitle>Students 3eme DSI And Their Ranks</CardTitle>
           <CardDescription>
             ranks was calculated by comparing just the &quot;moyenne
             general&quot; and if 2 students got the same &quot;moyenne&quot;
-            then they will be given the same rank (8 & 8) while the next student
-            after them will get (10 instead of 9), if this way is wrong you can
-            contact me with the correct formula.
+            then they will be given the same rank (exp : both 19 & 19) while the
+            next student after them will get (21 instead of 20), if this way is
+            wrong you can contact me with the correct formula.
           </CardDescription>
         </CardHeader>
         <CardContent>
