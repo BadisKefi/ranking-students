@@ -7,7 +7,7 @@ export default function Bg({
 }>) {
   const getRandomNumber = (min: number, max: number) =>
     Math.floor(Math.random() * (max - min + 1)) + min;
-  const randomNumber = getRandomNumber(1, 10);
+  const randomNumber = getRandomNumber(1, 11);
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between md:p-12 lg:p-24 ${
