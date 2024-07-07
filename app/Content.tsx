@@ -18,7 +18,7 @@ export default function Content() {
         <CardHeader>
           <CardTitle>Students 3eme DSI And Their Ranks</CardTitle>
           <CardDescription>
-            ranks was calculated by comparing just the &quot;moyenne
+            ranks where calculated by comparing just the &quot;moyenne
             general&quot; and if 2 students got the same &quot;moyenne&quot;
             then they will be given the same rank (exp : both 19 & 19) while the
             next student after them will get (21 instead of 20), if this way is

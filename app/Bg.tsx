@@ -1,13 +1,18 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export default function Bg({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [randomNumber, setRandomNumber] = useState<number>(1);
   const getRandomNumber = (min: number, max: number) =>
     Math.floor(Math.random() * (max - min + 1)) + min;
-  const randomNumber = getRandomNumber(1, 11);
+  useEffect(() => {
+    setRandomNumber(getRandomNumber(1, 11));
+  }, []);
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between md:p-12 lg:p-24 ${
