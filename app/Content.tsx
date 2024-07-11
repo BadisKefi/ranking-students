@@ -37,7 +37,7 @@ export default function Content() {
             <p className="leading-7">
               so if what you read here is not the same as what the institution
               wrote for you then its because there is someone else before your
-              name who got the same score as you. i'm so sorry for you 💔
+              name who got the same score as you. i&quot;m so sorry for you 💔
             </p>
             <p className="leading-7">
               Ranks here where calculated by comparing just the &quot;moyenne
