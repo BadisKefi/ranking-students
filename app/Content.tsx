@@ -23,16 +23,17 @@ export default function Content() {
           <CardDescription>
             <p className="leading-7">
               when comparing your 2eme rank here to your official university
-              rank it may look different a little bit , but i can't tell why ,
-              if it's a problem from my side then it may be because of the
-              calculation method or the data itself.
+              rank it may look different a little bit , but i can&apos;t tell
+              why , if it&apos;s a problem from my side then it may be because
+              of the calculation method or the data itself 🤔.
             </p>
             <p className="leading-7">
               Ranks where calculated by comparing just the &quot;moyenne
               general&quot; and if 2 students got the same &quot;moyenne&quot;
               then they will be given the same rank (exp : both 19 & 19) while
               the next student after them will get (21 instead of 20), if this
-              way is wrong you can contact me with the correct formula.
+              way is wrong you can contact me with the correct formula 💭.
+              <br />
             </p>
           </CardDescription>
         </CardHeader>
