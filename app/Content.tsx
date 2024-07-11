@@ -36,8 +36,8 @@ export default function Content() {
               <br />
             </p>
             <p className="leading-7">
-              please for the 3eme scores, don't take it seriously & if you found
-              a mistake in someones score tell me 💭.
+              please for the 3eme scores, don&apos;t take it seriously & if you
+              found a mistake in someones score tell me 💭.
               <br />
             </p>
           </CardDescription>
