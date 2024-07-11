@@ -42,14 +42,13 @@ export function AlgorithmRadio() {
               same rank )
             </div>
           </div>
-          <div className="flex items-center space-x-3 space-y-0">
+          <div className="flex items-start space-x-3 space-y-0">
             <div>
               <RadioGroupItem value="genuine" />
             </div>
             <div className="font-normal">
               Genuine Algorithm ( students with same score will get the same
-              rank at the same time last rank will still be equal to total
-              number of students)
+              rank, all without breaking the ranking flow of total students)
             </div>
           </div>
         </RadioGroup>
