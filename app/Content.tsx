@@ -22,10 +22,10 @@ export default function Content() {
           <CardTitle>🎓 Dsi Students And Their Ranks</CardTitle>
           <CardDescription>
             <p className="leading-7">
-              when comparing your 2eme rank here to your official university
-              rank it may look different a little bit , but i can&apos;t tell
-              why , if it&apos;s a problem from my side then it may be because
-              of the calculation method or the data itself 🤔.
+              2eme scores & ranks should be correct cause i tested it with some
+              other students, the ranks where correct but still waiting to test
+              the similar ranked students if this is how it should be, i will
+              confirm when getting the answer.
             </p>
             <p className="leading-7">
               Ranks where calculated by comparing just the &quot;moyenne
