@@ -24,9 +24,11 @@ export default function Content() {
           <CardDescription>
             <p className="leading-8 text-red-500">READ CAREFULLY!</p>
             <p className="leading-7">
-              2eme values are correct and using the perfect algorithm to give
-              all students what they deserve, but sadly the institution is not
-              doing exactly that.
+              Values are verified by multiple students ✅.
+            </p>
+
+            <p className="leading-7">
+              the institution is not using a genuine algorithm 💔 💭.
             </p>
             <p className="leading-7">
               let me explain what i mean : if 2 students got the same score then
@@ -34,22 +36,7 @@ export default function Content() {
               them te same rank, instead the alphabetic name who comes first get
               the good rank.
             </p>
-            <p className="leading-7">
-              so if what you read here is not the same as what the institution
-              wrote for you then its because there is someone else before your
-              name who got the same score as you. i&quot;m so sorry for you 💔
-            </p>
-            <p className="leading-7">
-              Ranks here where calculated by comparing just the &quot;moyenne
-              general&quot; and if 2 students got the same &quot;moyenne&quot;
-              then they will be given the same rank (exp : both 19 & 19) while
-              the next student after them will get (21 instead of 20 : to keep
-              the total in sync), this is the perfect algorithm but the
-              institution is not using it 💭 so some students who got the same
-              rank as others must add +n where n is the number of students who
-              got the same rank as them.
-              <br />
-            </p>
+
             <AlgorithmRadio />
           </CardDescription>
         </CardHeader>
