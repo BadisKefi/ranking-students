@@ -4,6 +4,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { Student, students_3eme } from "./data";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useStore } from "./AlgorithmRadio";
 
 export const columns_3eme: ColumnDef<Student>[] = [
   {
@@ -32,31 +33,52 @@ export const columns_3eme: ColumnDef<Student>[] = [
     },
     cell: ({ row }) => {
       const score = parseFloat(row.getValue("score"));
+      const name = row.getValue("name") as string;
+      const { algorithm, change } = useStore();
+      const calculateRank = (
+        name: string,
+        score: number,
+        array: Student[],
+        algorithm: "genuine" | "institution"
+      ): number => {
+        let rank = 1;
 
-      const calculateRank = (score: number, array: Student[]) => {
-        const sortedStudents = array.slice().sort((a, b) => b.score - a.score);
-        let rank = 0;
-        for (let i = 0; i < sortedStudents.length; i++) {
-          if (score < sortedStudents[i].score) {
-            rank++;
-          } else if (score === sortedStudents[i].score) {
-            if (
-              i > 0 &&
-              sortedStudents[i].score === sortedStudents[i - 1].score
-            ) {
-              rank = rank;
-            } else {
+        if (algorithm === "genuine") {
+          // Sort students by score in descending order
+          array.sort((a, b) => b.score - a.score);
+          // Find the rank based on the score
+          for (let i = 0; i < array.length; i++) {
+            if (array[i].score > score) {
               rank++;
+            } else if (array[i].score === score) {
+              break;
             }
-          } else {
-            break;
+          }
+        } else if (algorithm === "institution") {
+          // Sort students by score in descending order and maintain original order for ties
+          array.sort(
+            (a, b) => b.score - a.score || a.name.localeCompare(b.name)
+          );
+          // Find the rank based on the position in the array
+          for (let i = 0; i < array.length; i++) {
+            if (
+              array[i].score > score ||
+              (array[i].score === score &&
+                array[i].name.localeCompare(name) < 0)
+            ) {
+              rank++;
+            } else if (array[i].score === score && array[i].name === name) {
+              break;
+            }
           }
         }
+
         return rank;
       };
+
       return (
         <div className="text-right font-medium">
-          {calculateRank(score, students_3eme)}
+          {calculateRank(name, score, students_3eme, algorithm)}
         </div>
       );
     },
