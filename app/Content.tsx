@@ -35,6 +35,11 @@ export default function Content() {
               way is wrong you can contact me with the correct formula 💭.
               <br />
             </p>
+            <p className="leading-7">
+              please for the 3eme scores, don't take it seriously & if you found
+              a mistake in someones score tell me 💭.
+              <br />
+            </p>
           </CardDescription>
         </CardHeader>
         <CardContent>
