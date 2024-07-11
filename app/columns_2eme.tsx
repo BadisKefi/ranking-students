@@ -1,11 +1,11 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { Student, students } from "./data";
+import { Student, students_2eme } from "./data";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const columns: ColumnDef<Student>[] = [
+export const columns_2eme: ColumnDef<Student>[] = [
   {
     accessorKey: "name",
     header: "Name",
@@ -56,7 +56,7 @@ export const columns: ColumnDef<Student>[] = [
       };
       return (
         <div className="text-right font-medium">
-          {calculateRank(score, students)}
+          {calculateRank(score, students_2eme)}
         </div>
       );
     },

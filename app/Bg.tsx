@@ -7,12 +7,20 @@ export default function Bg({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [randomNumber, setRandomNumber] = useState<number>(1);
+  const [randomNumber, setRandomNumber] = useState<number>(0);
   const getRandomNumber = (min: number, max: number) =>
     Math.floor(Math.random() * (max - min + 1)) + min;
   useEffect(() => {
     setRandomNumber(getRandomNumber(1, 11));
   }, []);
+
+  // if (randomNumber === 0)
+  //   return (
+  //     <main className="flex min-h-screen flex-col items-center justify-between md:p-12 lg:p-24">
+  //       loading ...
+  //     </main>
+  //   );
+
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between md:p-12 lg:p-24 ${
